@@ -13,7 +13,7 @@ function toggleButton() {
 
 function tellMe(joke) {
     VoiceRSS.speech({
-        key: '9b747c1b3456410a8fa89d1fa5448892',
+        key: '',
         src: joke,
         hl: 'en-us',
         v: 'Linda',
@@ -26,7 +26,7 @@ function tellMe(joke) {
 // Get Joke API 
 async function getJokes() {
     let joke = ''
-    const apiUrl = 'https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,racist,sexist,explicit';
+    const apiUrl = '';
     try{
         const response = await fetch(apiUrl);
         const data = await response.json();
